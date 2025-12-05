@@ -361,6 +361,14 @@ template {
   box-sizing: border-box;
 }
 
+body {
+  background-color: #FAF3DD;
+  font-family: "omnes-pro", sans-serif; 
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/background-circles.svg");
+  background-size: cover;
+}
 
 
 
@@ -374,7 +382,8 @@ template {
     justify-content: space-between;
     align-items: center; 
     border-bottom: 1px solid #ddd;
-    font-family: omnes-pro, sans-serif;
+    font-family: "omnes-pro", sans-serif;
+    font-size: 22px;
 
 }
 
@@ -387,6 +396,7 @@ template {
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
+
 }
 
 #join {
@@ -404,6 +414,7 @@ h1{
   font-family: omnes-pro, sans-serif;
   text-align: center;
   font-size: 96px;
+  font-weight: bold;
 
 }
 
@@ -416,10 +427,19 @@ h2 {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  font-weight: light;
 }
 
-.joinbtn {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
+.joinbtn a {
+  display: inline-block;
+  padding: 12px 30px;   
+  background-color: #351303;
+  color: #fff;              
+  text-decoration: none;    
+  font-weight: bold;
+  border-radius: 30px;     
+  margin-top: 70px;
+  font-size: 24px;
+  padding: 30px 80px;
+
 }
