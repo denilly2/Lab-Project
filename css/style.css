@@ -418,34 +418,45 @@ h1{
 
 }
 
-h2 {
-  color: #000000;
-  font-family: omnes-pro, sans-serif;
+h1 {
+  color: #F3722C;
+  font-size: 96px;
+  font-weight: 700;
   text-align: center;
-  font-size: 36px;
-  margin-top: 20px;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: light;
+}
+
+h2 {
+  color: #000;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.hero {
+  padding: 140px 20px 180px;
+  text-align: center;
+}
+
+.hero-text {
+  max-width: 900px;
+  margin: 32px auto 0;
+  font-size: 28px;
+  line-height: 1.6;
+}
+
+.joinbtn {
+  margin-top: 80px;
 }
 
 .joinbtn a {
-  display: inline-block;
-  padding: 12px 30px;   
-  background-color: #351303;
-  color: #fff;              
-  text-decoration: none;    
-  font-weight: bold;
-  border-radius: 30px;     
-  margin-top: 70px;
-  font-size: 24px;
-  padding: 30px 80px;
-
+  background:#351303;
+  color:#fff;
+  padding:30px 80px;
+  border-radius:40px;
+  font-size:24px;
+  text-decoration:none;
+  display:inline-block;
 }
-
-
-
 
 .info-section {
   max-width: 1200px;
@@ -453,18 +464,16 @@ h2 {
   padding: 0 40px;
 }
 
-
 .wie-title {
-  color: #F3722C;
   font-size: 64px;
-  font-weight: 700;
+  color:#F3722C;
 }
 
 .wie-line {
-  width: 160px;
+  width: 180px;
   height: 4px;
-  background-color: #351303;
-  margin: 16px 0 32px;
+  background:#351303;
+  margin:16px 0 32px;
 }
 
 .wie-text {
@@ -474,57 +483,303 @@ h2 {
 }
 
 .info-grid {
-  display: grid;
-  grid-template-columns: 300px 1fr; /* afbeelding fixed, tekst flexibel */
+  display:grid;
+  grid-template-columns: 420px 1fr;
   gap: 80px;
   margin-top: 120px;
-  align-items: start; /* bovenkant uitgelijnd */
+  align-items:flex-start;
 }
 
 .info-image img {
-  width: 100%;        /* vult de kolom van 300px */
-  height: auto;       /* behoudt verhouding */
-  max-height: 100%;   /* voorkomt dat hij groter wordt dan de kolomhoogte */
-  object-fit: contain;
-  display: block;
+  width:100%;
+  height:auto;
 }
 
-
-.werkt-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: start; /* bovenkant uitgelijnd met afbeelding */
+.werkt-title {
+  font-size: 48px;
+  color:#F3722C;
 }
 
 .werkt-line {
-  width: 100%;           /* lijn vult de hele tekstkolom */
-  height: 4px;
-  background-color: #35130370;
-  margin: 16px 0 48px;
-}
-
-
-
-
-.werkt-item {
-  margin-bottom: 36px;
+  height:4px;
+  width:100%;
+  background:#35130370;
+  margin:16px 0 48px;
 }
 
 .werkt-item h3 {
   font-size: 36px;
-  font-weight: 700;
-  color: #35130370;
-  margin-bottom: 8px;
+  color:#351303;
+  margin-bottom:8px;
 }
 
 .werkt-item p {
   font-size: 26px;
-  line-height: 1.5;
-  max-width: 800px;
-  font-family: "omnes-variable",sans-serif;
-  font-variation-settings: 'wght' 300, 'wdth' 100;
-  font-weight: light;
+  line-height:1.5;
+  max-width:800px;
 }
 
+.event-section {
+  max-width:1200px;
+  margin:160px auto;
+  padding:0 40px;
+}
 
+.event-title,
+.levend-title {
+  font-size:48px;
+  color:#F3722C;
+}
+
+.event-line,
+.levend-line {
+  width:220px;
+  height:4px;
+  background:#351303;
+  margin:16px 0 32px;
+}
+
+.event-text,
+.levend-text {
+  font-size:26px;
+  line-height:1.6;
+  max-width:900px;
+}
+
+.merch-section {
+  max-width:1200px;
+  margin:160px auto;
+  text-align:center;
+}
+
+.merch-title {
+  font-size:64px;
+  color:#F3722C;
+  margin-bottom:80px;
+}
+
+.merch-grid {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:40px;
+}
+
+.merch-card {
+  background:#F6C453;
+  border-radius:28px;
+  padding:32px;
+}
+
+.merch-card img {
+  width:100%;
+  height:200px;
+  object-fit:contain;
+  margin:24px 0;
+}
+
+.merch-card a {
+  background:#F94144;
+  color:#fff;
+  padding:14px 28px;
+  border-radius:28px;
+  text-decoration:none;
+  display:inline-block;
+}
+
+.join-section {
+  max-width:1200px;
+  margin:160px auto;
+  padding:0 40px;
+}
+
+.join-title {
+  font-size:64px;
+  color:#F3722C;
+}
+
+.join-line {
+  height:4px;
+  width:100%;
+  background:#35130370;
+  margin:16px 0 48px;
+}
+
+.join-grid {
+  display:grid;
+  grid-template-columns: 320px 1fr;
+  gap:60px;
+}
+
+.join-form {
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.join-form .two {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.join-form input {
+  padding:16px 18px;
+  border-radius:12px;
+  border:none;
+  background:#B7C3CC;
+}
+
+.join-form button {
+  margin-top:12px;
+  background:#F3722C;
+  color:#fff;
+  padding:18px;
+  border-radius:40px;
+  font-size:22px;
+  border:none;
+}
+
+.cta {
+  background: #F2F2F2;
+  padding: 80px 0;
+}
+
+.cta-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 40px;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 60px;
+}
+
+.cta h3 {
+  font-size: 48px;
+  color: #F3722C;
+  margin-bottom: 12px;
+}
+
+.cta p {
+  font-size: 22px;
+  max-width: 700px;
+}
+
+.cta a {
+  background: #351303;
+  color: #fff;
+  padding: 18px 56px;
+  border-radius: 40px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer {
+  background: #351303;
+  color: #fff;
+  padding: 80px 0 0;
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 40px 60px;
+
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 60px;
+}
+
+.footer h4 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.footer p,
+.footer a {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.footer-social a {
+  width: 40px;
+  height: 40px;
+  background: #F3722C;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bottom {
+  background: #F3722C;
+  text-align: center;
+  padding: 16px;
+  font-size: 16px;
+}
+.event-section {
+  max-width: 1200px;
+  margin: 160px auto;
+  padding: 0 40px;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.event-text-col {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.event-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.event-image img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+}
+
+.event-title,
+.levend-title {
+  font-size: 48px;
+  color: #F3722C;
+}
+
+.event-line,
+.levend-line {
+  width: 220px;
+  height: 4px;
+  background: #351303;
+  margin: 16px 0 32px;
+}
+
+.event-text,
+.levend-text {
+  font-size: 26px;
+  line-height: 1.6;
+  max-width: 700px;
+}
 
