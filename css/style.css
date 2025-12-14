@@ -474,31 +474,37 @@ h2 {
 }
 
 .info-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.4fr;
-    gap: 80px;
-    margin-top: 120px;
-    align-items: stretch; 
+  display: grid;
+  grid-template-columns: 300px 1fr; /* afbeelding fixed, tekst flexibel */
+  gap: 80px;
+  margin-top: 120px;
+  align-items: start; /* bovenkant uitgelijnd */
 }
 
 .info-image img {
-    height: 100%; 
-    object-fit: contain; 
+  width: 100%;        /* vult de kolom van 300px */
+  height: auto;       /* behoudt verhouding */
+  max-height: 100%;   /* voorkomt dat hij groter wordt dan de kolomhoogte */
+  object-fit: contain;
+  display: block;
 }
 
 
-.werkt-title {
-  color: #F3722C;
-  font-size: 56px;
-  font-weight: 700;
+.werkt-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: start; /* bovenkant uitgelijnd met afbeelding */
 }
 
 .werkt-line {
-  width: 220px;
+  width: 100%;           /* lijn vult de hele tekstkolom */
   height: 4px;
   background-color: #35130370;
   margin: 16px 0 48px;
 }
+
+
+
 
 .werkt-item {
   margin-bottom: 36px;
@@ -519,5 +525,6 @@ h2 {
   font-variation-settings: 'wght' 300, 'wdth' 100;
   font-weight: light;
 }
+
 
 
